@@ -54,6 +54,7 @@ int main(int argc, char const *argv[])
 	
 	do
 	{
+		system("clear");
 		printf("\nInforme a opção desejada:\n");
 		printf("1. BubleSort: \n");
 		printf("2. BubleSort VERSAO melhorada 1:\n");

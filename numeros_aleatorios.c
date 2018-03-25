@@ -18,7 +18,7 @@ int main(){
 	{
 		for (int j = 0; j < col; j++)
 		{
-			mat[li][col] = rand() %100000;
+			mat[li][col] = i+j+2;//rand() %100000;
 			fprintf(arc, "%ld\n",mat[li][col] );
 		}
 	}

@@ -3,3 +3,7 @@
 2.) O Algoritmo executado BubleSort V1 , o TEMPO gasto em segundos 49.722121, e a quantidade de numeros do vetor 100000.
 3.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 68.775236, e a quantidade de numeros do vetor 100000.
 4.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 68.318488, e a quantidade de numeros do vetor 100000.
+4.) O Algoritmo executado BubleSort, o TEMPO gasto em segundos 39.759274, e a quantidade de numeros do vetor 100000
+.4.) O Algoritmo executado BubleSort V1, o TEMPO gasto em segundos 22.587849, e a quantidade de numeros do vetor 100000
+.4.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 55.110684, e a quantidade de numeros do vetor 100000
+.
