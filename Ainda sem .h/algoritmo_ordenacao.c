@@ -8,6 +8,8 @@ void imprimeVetor( long int *v, int n);
 void bubleSort( long int *v, int n);
 void bubleSortV1(long int *v, int n);
 void bubleSortV2( long int *v, int n);
+void insertionsort(long int *v, int n);
+void selection_sort (long int vetor[],int max);
 
 int main(int argc, char const *argv[])
 {
@@ -18,10 +20,10 @@ int main(int argc, char const *argv[])
 	double tempo = 0;
 	// fim da função tempo, mas o printf esta no fim do programa 
 	// declaração de variaveis 
-	char buble[30];
+	char buble[30] = "Erro";
 	int n = 100000;
 	int  opcao , cont = 0;
-	int qtd_menu = 4;
+	int qtd_menu = 6;
 	//  abertura do arquivo
 	/* Temos dois arquivos 
 		1) para trazer os numeros do arquivo para nao inserir na mao.
@@ -59,7 +61,9 @@ int main(int argc, char const *argv[])
 		printf("1. BubleSort: \n");
 		printf("2. BubleSort VERSAO melhorada 1:\n");
 		printf("3. BubleSort VERSAO melhorada 2:\n");
-		printf("4. Sair \n");
+		printf("4. Insertion Sort \n");
+		printf("5. Select Sort \n");
+		printf("6. Sair \n");
 		scanf("%d", &opcao);
 
 	
@@ -79,13 +83,20 @@ int main(int argc, char const *argv[])
 				strcpy(buble,"BubleSort V2");
 				break;
 			case 4: 
+				insertionsort(v,n);
+				strcpy(buble, "insertion Sort");
+				break;
+			case 5: 
+				selection_sort(v,n);
+				strcpy(buble, "Select Sort");
+				break;
+			case 6: 
 				break;
 			default:
 				break;
 		}
 		if ( opcao != qtd_menu)
 		{
-			printf("entrei no if\n");
 			imprimeVetor(v,n);
 		}
 
@@ -115,14 +126,15 @@ void armazena_Arq(double final_time, int qtd_vetor, char string[30])
 {
 	FILE *arq;
 	 arq = fopen( "ArmazenaDados.txt","a+");
-	 int i = 4;
+	 
+
 	 if( !arq)
 	{
 		printf("Nao foi possivel abrir o arquivo\n");
 		exit(1);
 	}
-
-	fprintf(arq,"%d.) O Algoritmo executado %s, o TEMPO gasto em segundos %f, e a quantidade de numeros do vetor %d\n.",i++,string,final_time,qtd_vetor );
+	
+	fprintf(arq,"\nO Algoritmo executado %s, o TEMPO gasto em segundos %f, e a quantidade de numeros do vetor %d.\n",string,final_time,qtd_vetor );
 }
 // *********************inicio do bublesort normal***************************************
 void bubleSort( long int *v, int n)
@@ -130,8 +142,8 @@ void bubleSort( long int *v, int n)
 	int aux = 0;
 	// laço com a quantidade de elementos do vetor
 	for (int i = 0; i < n; i++)
-	{
-		// laço que percorre da primeira a penultima posição do vetor
+	
+{		// laço que percorre da primeira a penultima posição do vetor
 		for (int j = 0; j <= n-2; j++)
 		{
 			if (v[j] > v[j+1])
@@ -177,9 +189,9 @@ void bubleSortV2( long int *v, int n)
 	while(num <= n && troca == 1)
 	{
 		troca = 0;
-		for( i = 0; i < n -1; i++)
+		for( i = 0; i < (n - 1); i--)
 		{
-			if( v[i] < v[i+1])
+			if( v[i] > v[i+1])
 			{
 				troca = 1;
 				aux = v[i];
@@ -191,9 +203,53 @@ void bubleSortV2( long int *v, int n)
 	}
 }
 
+void insertionsort(long int *v, int n)
+{
 
+  int eleito, j;  
+  
+  // laço com a quantidade de elementos do vetor - 1
+  for(int i=0;i<=(n-1);i++)
+  {
+    eleito = v[i];
+    j = i - 1;
+    
+    // laço que percorre os elementos à esquerda do número eleito ou até encontrar a posição para recolocação do eleito em ordem crescente
+    while(j >= 0 && v[j] < eleito)
+    {
+      v[j+1] = v[j];
+      j--;
+    }
+    
+    v[j+1] = eleito;
+  }
+}
 
-
+void selection_sort (long int vetor[],int max) 
+{
+  int i, j, min, aux;
+  
+  for (i = 0; i < (max - 1); i++) 
+  {
+    /* O minimo é o primeiro número não ordenado ainda */
+    min = i;
+    for (j = i+1; j < max; j++) 
+    {
+      /* Caso tenha algum numero menor ele faz a troca do minimo*/
+      if (vetor[j] < vetor[min]) 
+      {
+   		min = j;
+      }
+    }
+    /* Se o minimo for diferente do primeiro numero não ordenado ele faz a troca para ordena-los*/
+    if (i != min) 
+    {
+      aux = vetor[i];
+      vetor[i] = vetor[min];
+      vetor[min] = aux;
+    }
+  }
+}
 
 
 

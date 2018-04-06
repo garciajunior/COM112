@@ -1,0 +1,17 @@
+0.) O Algoritmo executado BubleSort V1, o TEMPO gasto em segundos 0.019131, e a quantidade de numeros do vetor 1000.
+1.) O Algoritmo executado BubleSort, o TEMPO gasto em segundos 69.072032, e a quantidade de numeros do vetor 100000.
+2.) O Algoritmo executado BubleSort V1 , o TEMPO gasto em segundos 49.722121, e a quantidade de numeros do vetor 100000.
+3.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 68.775236, e a quantidade de numeros do vetor 100000.
+4.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 68.318488, e a quantidade de numeros do vetor 100000.
+5.) O Algoritmo executado BubleSort, o TEMPO gasto em segundos 39.759274, e a quantidade de numeros do vetor 100000
+6.) O Algoritmo executado BubleSort V1, o TEMPO gasto em segundos 22.587849, e a quantidade de numeros do vetor 100000
+7.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 55.110684, e a quantidade de numeros do vetor 100000
+8.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 54.644197, e a quantidade de numeros do vetor 100000
+9.) O Algoritmo executado , o TEMPO gasto em segundos 0.089808, e a quantidade de numeros do vetor 100000
+10.) O Algoritmo executado BubleSort V2, o TEMPO gasto em segundos 55.064475, e a quantidade de numeros do vetor 100000
+11.) O Algoritmo executado insertionsort, o TEMPO gasto em segundos 0.872060, e a quantidade de numeros do vetor 100000
+12.) O Algoritmo executado insertionsort, o TEMPO gasto em segundos 11.407984, e a quantidade de numeros do vetor 100000
+13.) O Algoritmo executado insertionsort, o TEMPO gasto em segundos 11.667160, e a quantidade de numeros do vetor 100000
+14.) O Algoritmo executado insertionsort, o TEMPO gasto em segundos 11.650918, e a quantidade de numeros do vetor 100000.
+15.) O Algoritmo executado insertionsort, o TEMPO gasto em segundos 11.636246, e a quantidade de numeros do vetor 100000.
+14.) O Algoritmo executado , o TEMPO gasto em segundos 0.097533, e a quantidade de numeros do vetor 100000.O Algoritmo executado Erro, o TEMPO gasto em segundos 0.101361, e a quantidade de numeros do vetor 100000.O Algoritmo executado Select Sort, o TEMPO gasto em segundos 21.364900, e a quantidade de numeros do vetor 100000.

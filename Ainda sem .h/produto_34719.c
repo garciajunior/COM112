@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 }
 
 
-
+// dados preenchido dentro do codigo
 void preencheVetorProd(prod *p)
 {
 	strcpy(p[0].descricao,"Espatula");
